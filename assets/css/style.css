@@ -1,0 +1,126 @@
+
+:root {
+  --outer-space: ;
+
+}
+
+::selection {
+  background-color: ;
+  color: ;
+}
+
+html {
+   font-size: ;
+}
+
+body {
+  font-family: 
+  font-size: 
+  line-height: ;
+  color: ;
+  background-color: ;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: ;
+  color: ;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: ;
+}
+
+h2 {
+  font-size: ;
+}
+
+h3 {
+  font-size: ;
+}
+
+h4 {
+  font-size: ;
+}
+
+h5 {
+  font-size: ;
+}
+
+h6 {
+  font-size: ;
+}
+
+p {
+  margin-bottom: ;
+}
+
+code {
+  font-family: ;
+}
+
+header {
+  width: 96%;
+  margin: 0 auto;
+  padding: 2.5rem;
+  text-align: center;
+}
+
+header h1.page-title {
+  padding: 
+  font-size: ;
+}
+
+main {
+  width: 96%;
+  margin: ;
+}
+
+footer {
+  margin: ;
+  text-align: center;
+}
+
+
+.row {
+  display: ;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+
+
+@media screen and (min-width: 768px) {
+
+  .card-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  /* select the last child to grow to full width if it has space to grow */
+  .card-column:last-child {
+    flex-grow: 1;
+  }
+}
+
+/* media query for larger screens */
+@media screen and (min-width: 992px) {
+  header {
+    width: 75%;
+  }
+
+  .card-column {
+    flex: 0 0 33.333%;
+    max-width: 33.333%;
+  }
+}
