@@ -79,11 +79,14 @@ footer {
 }
 
 
-main button {
+button {
   background-color: red;
   color: white;
   border: none;
-  padding: 0.6rem 1rem;
+  padding: 0;
+  font: 500 100%/1.5 system-ui;
+
+
 }
 
 .aboutme {
@@ -91,18 +94,24 @@ main button {
   padding: 20px 50px;
   grid-template-columns: 1fr 2fr;
   gap: 3rem;
-  margin: 5% auto;
+  margin: 40px auto;
   align-items: center;
   background-color: white;
 
 }
 
+.button {
+  position: absolute;
+  bottom: 10%;
+  left: 50px;
+  width: 120px;
+  transform: translateY(-50%);
+}
+
 .contact-intro {
-  display: flex;
-  flex-wrap: wrap;
   padding: 20px 50px;
   gap: 1rem;
-  margin: 5% auto;
+  margin: 5px auto;
   align-items: center;
 
 
@@ -113,28 +122,18 @@ main button {
   padding: 0 50px;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  margin: 10px auto;
+  margin: 5px auto;
   align-items: center;
 
 
 }
 
-.contact-section a:link,
-a:visited {
-  color: white;
-  border: 2px solid red;
-  padding: 10px 20px;
-  font-size: 22px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-}
-
-.contact-section a:hover,
-a:active {
+.contact-section a,
+a:hover {
   background-color: red;
   color: white;
 }
+
 
 .intro,
 .portfolio-section {
@@ -142,7 +141,7 @@ a:active {
   padding: 20px 50px;
   grid-template-columns: 2fr 1fr;
   gap: 2rem;
-  margin: 5% auto;
+  margin: 5px auto;
   align-items: center;
 }
 
@@ -193,6 +192,12 @@ a:active {
   align-content: center;
 }
 
+.portfolio-img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+}
+
 .span-1 {
   grid-column-end: span 3;
   grid-row-end: span 1;
@@ -203,41 +208,9 @@ a:active {
   grid-row-end: span 2;
 }
 
-.portfolio-img {
-  object-fit: cover;
-  width: 100%;
-  height: auto;
-}
+@media screen and (min-width:250px) and (max-width:480px) {
 
-
-
-.justify-center {
-  justify-content: center;
-}
-
-
-
-@media screen and (min-width: 768px) {
-
-  .card-column {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-
-  /* select the last child to grow to full width if it has space to grow */
-  .card-column:last-child {
-    flex-grow: 1;
-  }
-}
-
-/* media query for larger screens */
-@media screen and (min-width: 992px) {
-  header {
-    width: 75%;
-  }
-
-  .card-column {
-    flex: 0 0 33.333%;
-    max-width: 33.333%;
+  .intro .portfolio-section .contact-intro .contact-section .portfolio-container {
+    grid-template-columns: repeat(1, 1fr);
   }
 }
