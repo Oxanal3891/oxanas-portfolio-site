@@ -5,7 +5,6 @@
 body {
   background-color: black;
   margin: 1em auto;
-  padding: 20px 20px;
   font: 500 100%/1.5 system-ui;
 }
 
@@ -53,16 +52,8 @@ p {
   font-size: 22px;
   line-height: 2;
   margin: 35px 0;
-  
-}
 
-header {
-  width: 96%;
-  margin: 0 auto;
-  padding: 2.5rem;
-  text-align: center;
 }
-
 
 figure {
   margin: 0;
@@ -78,42 +69,94 @@ figure a {
 figcaption {
   grid-row: 2;
   grid-column: 1;
-  background-color: rgba(255,255,255,.5);
+  background-color: rgba(255, 255, 255, .5);
   padding: .2em .5em;
   justify-self: start;
 }
 
 footer {
-  margin: ;
-  text-align: center;
+  padding: 20px 50px;
 }
+
 
 main button {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 0.6rem 1rem;
-  }
-
-.before-portfolio {
-  display: grid;
-  padding: 10px;
-  grid-template-columns: 2fr 1fr;
-  gap: 1rem;
-  align-items: center;
-  margin: 0 auto;
-  font: 500 100%/1.5 system-ui;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
 }
 
-.before-portfolio img {
-    max-width: 100%;
-    height: auto;
-  }
+.aboutme {
+  display: grid;
+  padding: 20px 50px;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+  margin: 5% auto;
+  align-items: center;
+  background-color: white;
+
+}
+
+.contact-intro {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px 50px;
+  gap: 1rem;
+  margin: 5% auto;
+  align-items: center;
+
+
+}
+
+.contact-section {
+  display: grid;
+  padding: 0 50px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin: 10px auto;
+  align-items: center;
+
+
+}
+
+.contact-section a:link,
+a:visited {
+  color: white;
+  border: 2px solid red;
+  padding: 10px 20px;
+  font-size: 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.contact-section a:hover,
+a:active {
+  background-color: red;
+  color: white;
+}
+
+.intro,
+.portfolio-section {
+  display: grid;
+  padding: 20px 50px;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+  margin: 5% auto;
+  align-items: center;
+}
+
+.intro,
+.aboutme img {
+  text-align: center;
+  max-width: 100%;
+  height: auto;
+}
 
 
 .navigation ul {
   list-style-type: none;
-  margin: 0;
+  margin: auto 50px;
   padding: 0;
   overflow: hidden;
 }
@@ -134,20 +177,20 @@ main button {
   background-color: red;
 }
 
-.portfolio-container { 
+.portfolio-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   grid-gap: 1px;
   grid-auto-rows: minmax(180px, auto);
   grid-auto-flow: dense;
-  padding: 1px;
+  padding: 20px 50px;
 }
 
 .portfolio-item {
-    padding: 1rem;
-    background-color: #ccc;
-    border-radius: 10px;
-    align-content: center;
+  padding: 1rem;
+  background-color: #ccc;
+  border-radius: 10px;
+  align-content: center;
 }
 
 .span-1 {
@@ -157,7 +200,7 @@ main button {
 
 .span-3 {
   grid-column-end: span 3;
-  grid-row-end: span 4;
+  grid-row-end: span 2;
 }
 
 .portfolio-img {
