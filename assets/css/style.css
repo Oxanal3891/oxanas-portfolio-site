@@ -14,7 +14,7 @@ html {
 }
 
 body {
-  font-family: 
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 
   line-height: ;
   color: ;
@@ -34,27 +34,27 @@ h6 {
 }
 
 h1 {
-  font-size: ;
+  font-size: 25px;
 }
 
 h2 {
-  font-size: ;
+  font-size: 23px;
 }
 
 h3 {
-  font-size: ;
+  font-size: 20px ;
 }
 
 h4 {
-  font-size: ;
+  font-size: 18px ;
 }
 
 h5 {
-  font-size: ;
+  font-size: 16px;
 }
 
 h6 {
-  font-size: ;
+  font-size: 14px;
 }
 
 p {
@@ -87,12 +87,40 @@ footer {
   text-align: center;
 }
 
-
-.row {
-  display: ;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
+.portfolio-container { 
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: -8px; 
+  width: 100%;
 }
+
+.portfolio-item {
+  flex: auto;
+  height: 250px;
+  min-width: 150px;
+  margin: 0 8px 8px 0; 
+}
+
+.portfolio-item:nth-child(4n+1) {
+  width: 250px;
+}
+.portfolio-item:nth-child(4n+1):nth-child(4n+2) {
+  width: 325px;
+}
+.portfolio-item:nth-child(4n+1):nth-child(4n+3) {
+  width: 180px;
+}
+.portfolio-item:nth-child(4n+1):nth-child(4n+4) {
+  width: 380px;
+}
+
+.portfolio-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+
 
 .justify-center {
   justify-content: center;
