@@ -3,6 +3,7 @@ Portfolio site of Oxana Latypova
 
 The project covers creation of a one-page portfolio site. The resultant site looks as follows:
 
+![alt text](https://github.com/Oxanal3891/oxanas-portfolio-site/assets/148264525/3e110915-1fb2-4413-8efb-8fb80e415e83)
 
 
 ## Site
